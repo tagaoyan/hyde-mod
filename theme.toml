@@ -1,0 +1,15 @@
+name = "Hyde-mod"
+license = "MIT"
+description = "An hugo theme modified from Hyde"
+tags = ["blog", "company"]
+features = ["blog"]
+
+[author]
+    name = "Yan Gao"
+    homepage = "http://tagaoyan.github.io"
+
+# If Porting existing theme
+[original]
+    author =  "spf13"
+    homepage = "http://spf13.com"
+    repo = "http://github.com/spf13/hyde"
