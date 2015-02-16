@@ -333,8 +333,10 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Table of contents */
-#TableOfContents {
-  float: right;
+@media (min-width: 30rem) {
+  #TableOfContents {
+    float: right;
+  }  
 }
 
 /* Related posts */
