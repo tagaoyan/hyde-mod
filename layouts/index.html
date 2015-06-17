@@ -3,9 +3,8 @@
 
 {{ partial "sidebar.html" . }}
 
-    <div class="content container">
+<div class="content container">
 <div class="posts">
-
   {{ range first 5 (where .Data.Pages "Section" "post") }}
   {{ .Render "summary" }}
   {{ end }}
