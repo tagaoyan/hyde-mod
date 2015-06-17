@@ -11,6 +11,32 @@ Supports Hugo since version 0.12.
 - Support table of contents
 - Optimize template structure
 
+## Hints
+
+### Side menu items
+
+Put these lines in `config.toml`:
+
+    [[menu.main]]
+    name = "Posts"
+    weight = 1
+    url = "/post/"
+
+    [[menu.main]]
+    name = "Categories"
+    weight = 10
+    url = "/categories/"
+
+    [[menu.main]]
+    name = "Tags"
+    weight = 20
+    url = "/tags/"
+
+and put these lines in frontmatter of a single post:
+
+    menu = "main"
+    weight = 999
+
 ### Todo
 
 - Merge CSS files
