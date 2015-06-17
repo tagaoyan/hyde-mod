@@ -6,7 +6,7 @@
   &middot;
   <span class="post-categories">
     {{ range . }}
-    <a href="{{ $.Site.BaseUrl }}/categories/{{ . | urlize | lower}}" class="category">{{ . }}</a>
+    <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize | lower}}" class="category">{{ . }}</a>
     {{ end }}
   </span>
   {{ end }}
@@ -14,7 +14,7 @@
   &middot;
   <span class="post-tags">
     {{ range . }}
-    <a href="{{ $.Site.BaseUrl }}/tags/{{ . | urlize | lower}}" class="tag">{{ . }}</a>
+    <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize | lower}}" class="tag">{{ . }}</a>
     {{ end }}
   </span>
   {{ end }}
