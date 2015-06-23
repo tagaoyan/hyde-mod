@@ -1,10 +1,10 @@
-<div class="post">
+<article class="hentry">
   <header>
-  <h1 class="post-title">{{ .Title }}</h1>
-  <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+  <h1 class="entry-title">{{ .Title }}</h1>
+  <span class="entry-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
   {{ with .Params.categories }}
   &middot;
-  <span class="post-categories">
+  <span class="entry-categories">
     {{ range . }}
     <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize | lower}}" class="category">{{ . }}</a>
     {{ end }}
@@ -12,16 +12,16 @@
   {{ end }}
   {{ with .Params.tags }}
   &middot;
-  <span class="post-tags">
+  <span class="entry-tags">
     {{ range . }}
     <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize | lower}}" class="tag">{{ . }}</a>
     {{ end }}
   </span>
   {{ end }}
   </header>
+  <div class="entry-content">
   {{ .TableOfContents }}
-  <div class="post-content">
   {{ .Content }}
   </div>
-</div>
+</article>
 

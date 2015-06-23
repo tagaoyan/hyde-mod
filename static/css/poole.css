@@ -307,20 +307,20 @@ tbody tr:nth-child(odd) th {
 
 /* Blog post or page title */
 .page-title,
-.post-title,
-.post-title a {
+.entry-title,
+.entry-title a {
   color: #303030;
 }
 .page-title,
-.post-title {
+.entry-title {
   margin-top: 0;
   font-size: 2.5rem;
 }
 
 /* Meta data line below post title */
-.post-date,
-.post-categories,
-.post-tags {
+.entry-date,
+.entry-categories,
+.entry-tags {
   display: inline-block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
